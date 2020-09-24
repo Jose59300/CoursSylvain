@@ -91,14 +91,20 @@ un_lien.classList.add('btn-dowload');
 un_lien.href = 'https://github.com/h5bp/html5-boilerplate/releases/download/v8.0.0/html5-boilerplate_v8.0.0.zip';
 un_lien.setAttribute('data-ga-category', 'dowload');
 un_lien.setAttribute('date-ga-action', 'dowload');
-un_autre_lien.setAttribute('data-ga-label', 'v8.0.0');
+un_lien.setAttribute('data-ga-label', 'v8.0.0');
 let autre_strong = document.createElement('strong');
 autre_strong.innerHTML = 'Dowload';
 div_cinq.appendChild(un_lien);
 un_lien.appendChild(autre_strong);
 
-
-
+let deux_lien = document.createElement('a');
+deux_lien.classList.add('last-update');
+deux_lien.href = 'https://github.com/h5bp/html5-boilerplate/blob/v8.0.0/CHANGELOG.md';
+deux_lien.setAttribute('data-ga-category', 'Outbound links');
+deux_lien.setAttribute('date-ga-action', 'See the changelog');
+deux_lien.setAttribute('data-ga-label', 'v8.0.0');
+deux_lien.innerHTML = 'See the changelog';
+div_cinq.appendChild(deux_lien);
 
 
 document.body.appendChild(div);
