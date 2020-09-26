@@ -106,5 +106,17 @@ deux_lien.setAttribute('data-ga-label', 'v8.0.0');
 deux_lien.innerHTML = 'See the changelog';
 div_cinq.appendChild(deux_lien);
 
+let div_six = document.createElement('div');
+div_six.classList.add('site-section');
+
+let div_sept = document.createElement('div');
+div_sept.classList.add('container');
+div_six.appendChild(div_sept);
+
+let title = document.createElement('h2');
+title.innerHTML = 'Save time. Create with confidence.';
+div_sept.appendChild(title);
+
 
 document.body.appendChild(div);
+document.body.appendChild(div_six);
