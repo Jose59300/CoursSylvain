@@ -117,6 +117,220 @@ let title = document.createElement('h2');
 title.innerHTML = 'Save time. Create with confidence.';
 div_sept.appendChild(title);
 
+let div_huit = document.createElement('div');
+div_huit.classList.add('grid');
+div_sept.appendChild(div_huit);
+
+let div_neuf = document.createElement('div');
+div_neuf.classList.add('grid-cell');
+div_huit.appendChild(div_neuf);
+
+let title_un = document.createElement('h3');
+let span_un = document.createElement('span');
+div_neuf.appendChild(title_un);
+span_un.classList.add('star');
+span_un.innerHTML = '*';
+title_un.appendChild(span_un);
+title_un.innerHTML = 'Analytics, icons, and more';
+
+let paragraphe_un = document.createElement('p');
+paragraphe_un.innerHTML = 'A lean, mobile-friendly HTML template; optimized Google Analytics snippet; placeholder touch-device icon; and docs covering dozens of extra tips and tricks.';
+div_neuf.appendChild(paragraphe_un);
+
+let div_dix = document.createElement('div');
+div_dix.classList.add('grid-cell');
+div_huit.appendChild(div_dix);
+
+let title_deux = document.createElement('h3');
+let span_deux = document.createElement('span');
+div_dix.appendChild(title_deux);
+span_deux.classList.add('star');
+span_deux.innerHTML = '*';
+title_deux.appendChild(span_deux);
+title_deux.innerHTML = 'Normalize.css and helpers';
+
+let paragraphe_deux = document.createElement('p');
+paragraphe_deux.innerHTML = 'Includes';
+div_dix.appendChild(paragraphe_deux);
+
+let a_deux = document.createElement('a')
+a_deux.href = 'https://necolas.github.io/normalize.css/';
+a_deux.innerHTML = 'Normalize.css';
+paragraphe_deux.appendChild(a_deux);
+
+//paragraphe_deux.innerHTML = '— a modern, HTML5-ready alternative to CSS resets — and further base styles, helpers, media queries, and print styles.';
+
+let div_onze = document.createElement('div');
+div_onze.classList.add('grid-cell');
+div_huit.appendChild(div_onze);
+
+let title_trois = document.createElement('h3');
+let span_trois = document.createElement('span');
+div_onze.appendChild(title_trois);
+span_trois.classList.add('star');
+span_trois.innerHTML = '*';
+title_trois.appendChild(span_trois);
+title_trois.innerHTML = 'modernizr';
+
+let paragraphe_trois = document.createElement('p');
+paragraphe_trois.innerHTML = 'Get the latest minified versions of Modernizr:';
+div_onze.appendChild(paragraphe_trois);
+
+let a_trois = document.createElement('a')
+a_trois.href = 'https://modernizr.com/';
+a_trois.innerHTML = 'modernizr';
+paragraphe_trois.appendChild(a_trois);
+
+//paragraphe_trois.innerHTML = 'feature detection library, complete with a custom build configuration';
+
+let div_douze = document.createElement('div');
+div_douze.classList.add('grid-cell');
+div_huit.appendChild(div_douze);
+
+let title_quatre = document.createElement('h3');
+let span_quatre = document.createElement('span');
+div_douze.appendChild(title_quatre);
+span_quatre.classList.add('star');
+span_quatre.innerHTML = '*';
+title_quatre.appendChild(span_trois);
+title_quatre.innerHTML = 'High performance';
+
+let paragraphe_quatre = document.createElement('p');
+paragraphe_quatre.innerHTML = 'Apache settings to help you deliver excellent site performance. We independently maintain';
+div_douze.appendChild(paragraphe_quatre);
+
+let a_quatre = document.createElement('a')
+a_quatre.href = 'https://github.com/h5bp/server-configs';
+a_quatre.innerHTML = 'server configs';
+paragraphe_quatre.appendChild(a_quatre);
+
+//paragraphe_trois.innerHTML = 'for multiple platforms.';
+
+let div_treize = document.createElement('div');
+div_treize.classList.add('site_section');
+div_treize.classList.add('site-section-video');
+
+let title_cinq = document.createElement('h2');
+title_cinq.innerHTML = 'Introduction to V8';
+div_treize.appendChild(title_cinq);
+
+let div_quatorze = document.createElement('div');
+div_quatorze.classList.add('content');
+div_treize.appendChild(div_quatorze);
+
+let paragraphe_cinq = document.createElement('p');
+paragraphe_cinq.classList.add('new');
+paragraphe_cinq.innerHTML = "What's new?";
+div_quatorze.appendChild(paragraphe_cinq);
+
+let liste_title = document.createElement('ul');
+liste_title.classList.add('new');
+div_quatorze.appendChild(liste_title);
+
+let liste_un = document.createElement('li');
+liste_un.innerHTML = 'Added a sample package.json with basic Parcel commands to jump start your app development';
+liste_title.appendChild(liste_un);
+
+let liste_deux = document.createElement('li');
+liste_deux.innerHTML = 'Added sample Open Graph metadata';
+liste_title.appendChild(liste_deux);
+
+let liste_trois = document.createElement('li');
+liste_trois.innerHTML = 'Updated Modernizr and main.css';
+liste_title.appendChild(liste_trois);
+
+let liste_quatre = document.createElement('li');
+liste_quatre.innerHTML = 'Removed jQuery';
+liste_title.appendChild(liste_quatre);
+
+let liste_cinq = document.createElement('li');
+liste_cinq.innerHTML = 'Set anonymizeIp to true in Google Analytics snippet';
+liste_title.appendChild(liste_cinq);
+
+let liste_six = document.createElement('li');
+liste_six.innerHTML = 'Removed Browser Upgrade Prompt';
+liste_title.appendChild(liste_six);
+
+let liste_sept = document.createElement('li');
+liste_sept.innerHTML = "That's just the start of all the goodness.";
+liste_title.appendChild(liste_sept);
+
+let a_cinq = document.createElement('a');
+a_cinq.href = 'https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md';
+a_cinq.innerHTML = 'Check out the Changelog for all the details.';
+liste_sept.appendChild(a_cinq);
+
+let div_quinze = document.createElement('div');
+div_quinze.classList.add('site-section');
+
+let title_six = document.createElement('h2');
+title_six.innerHTML = 'Who uses HTML5 Boilerplate?';
+div_quinze.appendChild(title_six);
+
+let paragraphe_six = document.createElement('p');
+paragraphe_six.classList.add('in-the-wild');
+div_quinze.appendChild(paragraphe_six);
+
+let a_six = document.createElement('a');
+a_six.href = 'https://www.microsoft.com/surface/';
+a_six.innerHTML = 'Microsoft';
+paragraphe_six.appendChild(a_six);
+
+let a_sept = document.createElement('a');
+a_sept.href = 'https://data.nasa.gov/';
+a_sept.innerHTML = 'Nasa';
+paragraphe_six.appendChild(a_sept);
+
+let a_huit = document.createElement('a');
+a_huit.href = 'http://www.nikeskateboarding.com/';
+a_huit.innerHTML = 'Nike';
+paragraphe_six.appendChild(a_huit);
+
+let a_neuf = document.createElement('a');
+a_neuf.href = 'https://www.barackobama.com/';
+a_neuf.innerHTML = 'Barack Obama';
+paragraphe_six.appendChild(a_neuf);
+
+let a_dix = document.createElement('a');
+a_dix.href = 'https://www.itv.com/news/';
+a_dix.innerHTML = 'ITV News';
+paragraphe_six.appendChild(a_dix);
+
+let a_onze = document.createElement('a');
+a_onze.href = 'https://creativecommons.org/';
+a_onze.innerHTML = 'Creative Commons';
+paragraphe_six.appendChild(a_onze);
+
+let a_douze = document.createElement('a');
+a_douze.href = 'https://auspost.com.au/';
+a_douze.innerHTML = 'Australia Post';
+paragraphe_six.appendChild(a_douze);
+
+//paragraphe_six.innerHTML = ', and';
+
+let a_treize = document.createElement('a');
+a_treize.href = 'https://github.com/h5bp/html5-boilerplate/wiki/sites';
+a_treize.innerHTML = 'Many more';
+paragraphe_six.appendChild(a_treize);
+
+let div_seize = document.createElement('div');
+div_seize.classList.add('cta-option');
+div_quinze.appendChild(div_seize);
+
+
+let a_quatorze = document.createElement('a');
+a_quatorze.classList.add('btn');
+a_quatorze.classList.add('btn-dowload');
+a_quatorze.href = 'https://github.com/h5bp/html5-boilerplate/releases/download/v8.0.0/html5-boilerplate_v8.0.0.zip';
+a_quatorze.setAttribute('data-ga-category', 'dowload');
+a_quatorze.setAttribute('date-ga-action', 'dowload');
+a_quatorze.setAttribute('data-ga-label', 'v8.0.0');
+let deux_strong = document.createElement('strong');
+deux_strong.innerHTML = 'Dowload';
+div_seize.appendChild(a_quatorze);
+a_quatorze.appendChild(deux_strong);
 
 document.body.appendChild(div);
 document.body.appendChild(div_six);
+document.body.appendChild(div_treize);
+document.body.appendChild(div_quinze);
