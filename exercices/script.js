@@ -330,7 +330,103 @@ deux_strong.innerHTML = 'Dowload';
 div_seize.appendChild(a_quatorze);
 a_quatorze.appendChild(deux_strong);
 
+let div_one = document.createElement('div')
+div_one.classList.add('aside');
+
+let div_two = document.createElement('div');
+div_two.classList.add('container');
+div_one.appendChild(div_two);
+
+let liste_title_un = document.createElement('ul');
+liste_title_un.classList.add('inline-block-list');
+div_two.appendChild(liste_title_un);
+
+let liste_huit = document.createElement('li');
+liste_huit.innerHTML = 'Report issues';
+
+let a_quinze = document.createElement('a')
+a_quinze.href = 'https://github.com/h5bp/html5-boilerplate/issues';
+a_quinze.setAttribute('data-ga-category', 'Outbound links');
+a_quinze.setAttribute('date-ga-action', 'footer links');
+a_quinze.setAttribute('data-ga-label', 'Report issues');
+let span_cinq = document.createElement('span');
+span_cinq.classList.add('Icon');
+span_cinq.classList.add('Icon--github');
+liste_huit.appendChild(a_quinze);
+a_quinze.appendChild(span_cinq);
+liste_title_un.appendChild(liste_huit);
+
+let liste_neuf = document.createElement('li');
+liste_neuf.innerHTML = 'Help on Stack Overflow';
+
+let a_seize = document.createElement('a')
+a_seize.href = 'https://stackoverflow.com/questions/tagged/html5boilerplate';
+a_seize.setAttribute('data-ga-category', 'Outbound links');
+a_seize.setAttribute('date-ga-action', 'footer links');
+a_seize.setAttribute('data-ga-label', 'Help on Stack Overflow');
+let span_six = document.createElement('span');
+span_six.classList.add('Icon');
+span_six.classList.add('Icon--Stackoverflow');
+liste_neuf.appendChild(a_seize);
+a_seize.appendChild(span_six);
+liste_title_un.appendChild(liste_neuf);
+
+let liste_dix = document.createElement('li');
+liste_dix.innerHTML = 'View the showcase';
+
+let a_one = document.createElement('a')
+a_one.href = 'https://h5bp.net';
+a_one.setAttribute('data-ga-category', 'Outbound links');
+a_one.setAttribute('date-ga-action', 'footer links');
+a_one.setAttribute('data-ga-label', 'View the showcase');
+let span_sept = document.createElement('span');
+span_sept.classList.add('Icon');
+span_sept.classList.add('Icon--html5');
+liste_dix.appendChild(a_one);
+a_one.appendChild(span_sept);
+liste_title_un.appendChild(liste_dix);
+
+let footer = document.createElement('footer');
+footer.classList.add('site-footer');
+
+let iframe = document.createElement('iframe');
+iframe.classList.add('twitter-share-button');
+iframe.classList.add('twitter-share-button-rendered');
+iframe.classList.add('twitter-tweet-button');
+iframe.setAttribute('scrolling', 'no');
+iframe.setAttribute('allowtransparecy', 'true');
+iframe.setAttribute('allowFullscreen', 'true');
+iframe.setAttribute('style', 'position: static', 'visibility','widht: 76px', 'height: 28px',);
+iframe.setAttribute('title', 'twitter tweet button');
+iframe.setAttribute('src', 'https://platform.twitter.com/widgets/tweet_button.96fd96193cc66c3e11d4c5e4c7c7ec97.en.html#dnt=false&id=twitter-widget-1&lang=en&original_referer=https%3A%2F%2Fhtml5boilerplate.com%2F&size=l&text=HTML5%20Boilerplate%3A%20The%20rock-solid%20professional%20front-end%20template&time=1601825571598&type=share&url=https%3A%2F%2Fhtml5boilerplate.com%2F&via=h5bp');
+iframe.setAttribute('url', 'https://html5boilerplate.com/');
+footer.appendChild(iframe);
+
+let iframe_un = document.createElement('iframe');
+iframe_un.classList.add('twitter-follow-button');
+iframe_un.classList.add('twitter-follow-button-rendered');
+iframe_un.setAttribute('scrolling', 'no');
+iframe_un.setAttribute('allowtransparecy', 'true');
+iframe_un.setAttribute('allowFullscreen', 'true');
+iframe_un.setAttribute('style', 'position: static', 'visibility','widht: 125px', 'height: 28px',);
+iframe_un.setAttribute('title', 'twitter follow button');
+iframe_un.setAttribute('src', 'https://platform.twitter.com/widgets/follow_button.96fd96193cc66c3e11d4c5e4c7c7ec97.en.html#dnt=false&id=twitter-widget-0&lang=en&screen_name=h5bp&show_count=false&show_screen_name=true&size=l&time=1601825571586');
+iframe_un.setAttribute('screen_name', 'h5bp');
+iframe_un.setAttribute('frameborder', '0');
+footer.appendChild(iframe_un);
+
+let paragraphe_sept = document.createElement('p');
+paragraphe_sept.innerHTML = 'A project form';
+let a_two = document.createElement('a');
+a_two.href = 'https://github.com/h5bp';
+a_two.innerHTML = 'h5bp';
+footer.appendChild(paragraphe_sept);
+paragraphe_sept.appendChild(a_two);
+
+
 document.body.appendChild(div);
 document.body.appendChild(div_six);
 document.body.appendChild(div_treize);
 document.body.appendChild(div_quinze);
+document.body.appendChild(div_one);
+document.body.appendChild(footer);
