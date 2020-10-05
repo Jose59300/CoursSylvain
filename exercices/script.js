@@ -1,4 +1,4 @@
-let div = document.createElement('div');
+/*let div = document.createElement('div');
 div.classList.add('container');
 
 let une_div = document.createElement('div');
@@ -429,4 +429,69 @@ document.body.appendChild(div_six);
 document.body.appendChild(div_treize);
 document.body.appendChild(div_quinze);
 document.body.appendChild(div_one);
-document.body.appendChild(footer);
+document.body.appendChild(footer);*/
+
+
+//corriger
+/*let ul = document.createElement('ul');
+let listeHtml = ['a','b','c','d','e'];
+for (let liHtml of listeHtml){
+let li = document.createElement('li');
+li.innerHTML = liHtml;
+ul.appendChild(li);
+}
+document.body.appendChild(ul);
+
+
+function createNode(tag,elementParent, id, nomClass, contenuHTML){
+let elem = document.createElement(tag);
+if(typeof id !== 'undefined'){
+elem.setAttribute('id', id);
+}
+if(typeof nomClass !== 'undefined'){
+elem.className = nomClass;
+}
+if(typeof contenuHTML !== 'undefined'){
+elem.innerHTML = contenuHTML;
+}
+document.querySelector(elementParent).appendChild(elem);
+}
+createNode('ul', 'body','','monID','maClass');
+let listeHTML = ['a','b','c','d','e','f'];
+for(let liHTML of listeHTML){
+createNode('li','#monID',liHTML);
+}*/
+
+function createNode(tag,elementParent,attributs,contenuHTML){
+  let div;
+  if(tag !== 'textNode'){
+    div = document.createElement(tag);
+    if(typeof attributs !== 'undefined'){
+      for(let i=0; i<attributs.length; i++){
+          div.setAttribute(attributs[i][0], attributs[i][1]);
+      }
+
+    }
+    if(typeof contenuHTML !== 'undefined'){
+      div.innerHTML = contenuHTML;
+    }
+
+  } else {
+    div = document.createTextNode(contenuHTML);
+  }
+  document.querySelector(elementParent).appendChild(div);
+}
+createNode('div', 'body', [
+  ['class', 'container']
+]);
+createNode('div', '.container', [
+  ['role', 'banner'],
+  ['class', 'site-header']
+]);
+createNode('div', '.site-header', [
+  ['class', 'site-logo']
+], 'HTML5');
+createNode('span', '.site-logo', [
+  ['class', 'star']
+], '*');
+createNode('textNode', '.site-logo','', ' boilerplate');
