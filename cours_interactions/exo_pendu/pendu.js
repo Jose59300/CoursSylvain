@@ -5,19 +5,14 @@
 
 // Tableau contenant les mots qu'il est possible de faire deviner
 let mots = ['aleatoire','methode','javascript','football','sport'];
-​
 // Tableau contenant l'alphabet pour faire le clavier virtuel
 let tab = 'abcdefghijklmnopqrstuvwxyz';
-​
 //la fonction math.floor(Math.random()) génére quelque chose aléatoirement
 let mot = mots[Math.floor(Math.random() * mots.length)];
-​
 // Variable qui recevra le nombre de bonne réponse de l'utilisateur
 let nbBonneReponse = 0;
-​
 // Nombres de chances
 let chance = 5;
-​
 // ----- Clavier virtuel -----
 // Pour toutes les lettres de l'alphabet
 for (let j = 0; j < tab.length; j++){
@@ -30,14 +25,12 @@ for (let j = 0; j < tab.length; j++){
   // On ajoute le bouton au body
   document.body.appendChild(touche);
 }
-​
 // On crée un paragraphe
 let afficheChances = document.createElement('p');
 // On y affiche le nombre de chance
 afficheChances.innerHTML = 'Chance :' + chance;
 // On ajoute le paragraphe au body
 document.body.appendChild(afficheChances);
-​
 // On crée le container du mot à deviner
 let div = document.createElement('div');
 // On lui donne un id
@@ -45,8 +38,6 @@ div.id = 'mot';
 div.style.marginTop = '50px';
 // On l'ajoute au body
 document.body.appendChild(div);
-​
-​
 // Pour chaques lettres du mots à deviner
 for (let i = 0; i < mot.length; i++){
   // On crée un span
@@ -57,15 +48,12 @@ for (let i = 0; i < mot.length; i++){
   // On l'ajoute au body
   div.appendChild(elem);
 }
-​
 // Fonction de verification de la lettre proposée par l'utilisateur
 function verification(){
   // On récupère la lettre
   let lettre = this.innerHTML;
-​
   // On récupère les spans d'affichage du mot
   let spans = document.querySelectorAll('#mot span');
-​
   // Si la lettre et dans le mot
   if(mot.includes(lettre)){
     // Pour chaque lettres du mot
