@@ -80,7 +80,7 @@ function verification(){
     // On diminue le nombre de chance
     chance--;
     // On change l'affichage
-    chances.innerHTML = 'Chance :' + chance;
+    afficheChances.innerHTML = 'Chance :' + chance;
     // Si le nombre de chance et à zéro
     if(chance == 0){
       // On crée le paragraphe
